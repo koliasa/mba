@@ -1,35 +1,152 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ua">
 <head>
-  <meta charset="UTF-8">
-  <title>Koliasa construction</title>
-  <meta http-equiv="refresh" content="30;URL='https://github.com/koliasa'" />
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="images/favicon.png" rel="icon" />
+<title>ua.mba - продаж доменного імені</title>
+<meta name="description" content="ua.mba - продаж доменного імені, юамба, ЮАМБА">
+<meta name="author" content="koliasa.com">
 
+<!-- Web Fonts
+======================== -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+======================== -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="body">
-  <span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-  <div class="base">
-    <span></span>
-    <div class="face"></div>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 </div>
-<div class="longfazers">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-<h1>Redirecting...</h1>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<!-- Preloader End --> 
 
+<!-- Document Wrapper
+=============================== -->
+<div id="main-wrapper">
+  <section class="fullscreen d-flex flex-column"> 
+    <!-- Contact Details -->
+    <div class="container pt-2">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start"> <span class="text-5 mr-2"><i class="fas fa-phone-alt"></i></span>+38 (067) 201-80-08 | (066) 250-08-05</div>
+        <div class="col-sm-6 col-md-4 d-flex align-items-center justify-content-center mt-2 mt-sm-0"> <span class="text-5 mr-2"><i class="fas fa-envelope"></i></span><a class="text-dark" href="mailto:head@ua.mba">head@ua.mba</a> </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0"> <span class="text-5 mr-2"><i class="fas fa-globe"></i></span><a class="text-dark" data-toggle="modal" data-target="#more-domains" href="#">Інші домени</a> </div>
+      </div>
+    </div>
+    <div class="container py-5 px-4 px-lg-5 my-auto"> 
+      
+      <!-- Domain Details -->
+      <div class="row">
+        <div class="col-12 text-center mx-auto">
+          <h1 class="text-14 text-white bg-danger d-inline-block font-weight-700 rounded px-4 mb-4">Бажаєте придбати домен</h1>
+          <h2 class="text-19 font-weight-700 mb-4">ua.mba</h2>
+          <h3 class="font-weight-400 mb-4">Оціночна вартість <span class="badge badge-success text-7 font-weight-600">$10572</span></h3>
+          <p class="text-4 text-muted mb-4 mx-lg-5">Преміальне доменне ім’я доступне для миттєвої покупки. Інвестуйте в доменне ім’я преміум-класу, щоб запустити свій бренд.</p>
+          <a class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#offer-part" href="#">Зробити пропозицію</a> </div>
+      </div>
+    </div>
+    
+    <!-- Powerd by Text -->
+    <div class="container text-center">
+      <p class="text-2 text-muted mb-2">© 2020 <a href="https://ua.mba/">UA.MBA</a> Всі права захищені.</p>
+    </div>
+  </section>
+</div>
+<!-- Document Wrapper End --> 
+
+<!-- Offer Popup
+================================== -->
+<div id="offer-part" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Зробіть свою пропозицію</h5>
+        <button type="button" class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body p-4">
+        <p class="text-black-50 mb-4">Будь ласка, заповніть форму нижче, і продавець отримає ваше повідомлення.</p>
+        
+        <!-- Contact Form -->
+        <form id="contact-form" action="php/mail.php" method="post">
+          <div class="form-group icon-group position-relative">
+            <input name="name" type="text" class="form-control border-2" required placeholder="Введіть ім'я">
+            <span class="icon-inside"><i class="fas fa-user"></i></span> </div>
+          <div class="form-group icon-group position-relative">
+            <input name="email" type="email" class="form-control border-2" required placeholder="Введіть свою електронну адресу">
+            <span class="icon-inside"><i class="fas fa-envelope"></i></span> </div>
+          <div class="form-group icon-group position-relative">
+            <input name="offer" type="text" class="form-control border-2" required placeholder="Введіть свою пропозицію">
+            <span class="icon-inside"><i class="fas fa-dollar-sign"></i></span> </div>
+          <div class="form-group mt-4">
+            <button id="submit-btn" class="btn btn-primary btn-block" type="submit">Надіслати мою пропозицію</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Offer Popup End --> 
+
+<!-- More Domains Popup
+================================== 
+<div id="more-domains" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><span class="text-5 mr-1"><i class="fas fa-globe"></i></span> More Domains For Sale</h5>
+        <button type="button" class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body p-4">
+        <p>Below all Domains are available for sale. Please click on domain link for further information.</p>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <ul class="list-style-2">
+              <li><a href="#">MyDomain.com</a></li>
+              <li><a href="#">YourExample.com</a></li>
+              <li><a href="#">WeDomainNew.com</a></li>
+              <li><a href="#">MyExample.com</a></li>
+              <li><a href="#">SaleMyDomain.com</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <ul class="list-style-2">
+              <li><a href="#">MyDomain.net</a></li>
+              <li><a href="#">YourExample.net</a></li>
+              <li><a href="#">WeDomainNew.net</a></li>
+              <li><a href="#">MyExample.net</a></li>
+              <li><a href="#">SaleMyDomain.net</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <ul class="list-style-2">
+              <li><a href="#">MyDomain.com</a></li>
+              <li><a href="#">YourExample.com</a></li>
+              <li><a href="#">WeDomainNew.com</a></li>
+              <li><a href="#">MyExample.com</a></li>
+              <li><a href="#">SaleMyDomain.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ More Domains Popup End --> 
+
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="js/theme.js"></script>
 </body>
 </html>
